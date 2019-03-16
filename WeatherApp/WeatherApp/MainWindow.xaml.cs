@@ -24,5 +24,8 @@ namespace WeatherApp
         {
             InitializeComponent();
         }
+        private void Update_Click(object sender, RoutedEventArgs e)
+        {
+        }
     }
 }
