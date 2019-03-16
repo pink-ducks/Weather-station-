@@ -55,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="IObserver.cs" />
+    <Compile Include="MainDisplay.cs" />
+    <Compile Include="Observable.cs" />
+    <Compile Include="StatisticDisplay.cs" />
+    <Compile Include="WeatherData.cs" />
+    <Compile Include="WeatherDisplay.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
