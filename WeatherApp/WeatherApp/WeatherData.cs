@@ -1,16 +1,19 @@
-﻿namespace WeatherApp
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace WeatherApp
 {
-    public partial class MainWindow
-    {
-        class WeatherData 
+       public class WeatherData
         {
-            public int Temperature { get; set; }
+            public float Temperature { get; set; }
             private string Condition { get; set; }
-            int GetTemperature()
-            { return 0; }
-            string GetConidtion()
-            { return ""; }
+           public WeatherData(float temp, string cond)
+            {
+                this.Temperature = temp;
+                this.Condition = cond;
 
+            }
         }
     }
-}
