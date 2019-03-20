@@ -12,7 +12,8 @@
         <Grid Margin="24,24,24,24">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.6*"/>
+                <ColumnDefinition Width="0.4*"/>
             </Grid.ColumnDefinitions>
             <TextBlock 
                 Grid.Column="0"
@@ -30,6 +31,13 @@
                 TextWrapping="Wrap" 
                 Focusable="False"
              />
+            <TextBlock 
+                Grid.Column="2"
+                FontStyle="Normal" 
+                FontSize="30"
+                FontWeight="Bold"
+                Text="°C"
+                />
         </Grid>
         <!-- Condition -->
         <Grid Margin="24,24,24,24">
