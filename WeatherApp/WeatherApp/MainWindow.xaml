@@ -24,12 +24,16 @@
                 />
             <TextBox
                 x:Name="TemperatureBox"
+                Margin="3"
                 Grid.Column="1"
                 IsReadOnly="True"
                 Background="BlanchedAlmond"
                 Padding="5"
                 TextWrapping="Wrap" 
                 Focusable="False"
+                FontSize="17"
+                FontWeight="Bold"
+                TextAlignment="Center"
              />
             <TextBlock 
                 Grid.Column="2"
