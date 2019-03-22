@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WeatherApp"
         mc:Ignorable="d"
-        Title="Current Weather" Height="250" Width="400">
+        Title="Current Weather" Height="400" Width="400">
     <Window.Background>
-        <ImageBrush Image="image/Ireland.jpg" />
+        <ImageBrush ImageSource ="image/IrelandBetter.jpg" />
     </Window.Background>
     <StackPanel>
         <!--Temperature -->
@@ -23,29 +23,30 @@
                 FontSize="30"
                 FontWeight="Bold"
                 Text="TEMPERATURE : "
+                Foreground="Black" Margin="72,46,42.6,-46" RenderTransformOrigin="0.482,1" Grid.ColumnSpan="3"
                 />
             <TextBox
                 x:Name="TemperatureBox"
-                Grid.Column="1"
                 IsReadOnly="True"
                 Background="BlanchedAlmond"
                 Padding="5"
                 TextWrapping="Wrap" 
-                Focusable="False"
+                Focusable="False" Margin="135,103,4.4,-114"
              />
-            <TextBlock 
-                Grid.Column="2"
+            <TextBlock
                 FontStyle="Normal" 
                 FontSize="30"
                 FontWeight="Bold"
-                Text="°C"
+                Text="°C" Margin="0.6,103,10.2,-114"
+                Foreground="Black" Grid.Column="1"
                 />
         </Grid>
         <!-- Condition -->
         <Grid Margin="24,24,24,24">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1.3*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="39*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="26*"/>
             </Grid.ColumnDefinitions>
             <TextBlock 
                 Grid.Column="0"
@@ -53,22 +54,26 @@
                 FontWeight="Bold"
                 FontSize="30"
                 Text="CONDITION : "
+                Foreground="White" HorizontalAlignment="Left" Width="195" Margin="88,90,0,-90" Grid.ColumnSpan="3"
                 />
             <TextBox
                 x:Name="ConditionBox"
-                Grid.Column="1"
                 IsReadOnly="True"
-                Background="GreenYellow"
+                Background="BlanchedAlmond"
                 Padding="5"
                 TextWrapping="Wrap" 
-                Focusable="False"
+                Focusable="False" Grid.ColumnSpan="3" Margin="104,135,90.6,-135"
              />
         </Grid>
-        <!-- Update Button-->
-        <Grid>
-            <Button x:Name="UpdateButton" Background="Aqua" Click="Update_Click" Content="UPDATE" Margin ="150,5" FontWeight="Bold"  />
+        <Grid Margin="0,0,-0.4,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="83*"/>
+                <ColumnDefinition Width="48*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="UpdateButton" Background="HotPink" Click="Update_Click" Content="UPDATE" Margin ="159,149,141.6,-139.2" FontWeight="Bold" Grid.ColumnSpan="2"  />
         </Grid>
+        <!-- Update Button-->
     </StackPanel>
 
-    
+
 </Window>
