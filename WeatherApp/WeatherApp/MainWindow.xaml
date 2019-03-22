@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:WeatherApp"
         mc:Ignorable="d"
         Title="Current Weather" Height="250" Width="400">
-    
+    <Window.Background>
+        <ImageBrush Image="image/Ireland.jpg" />
+    </Window.Background>
     <StackPanel>
         <!--Temperature -->
         <Grid Margin="24,24,24,24">
