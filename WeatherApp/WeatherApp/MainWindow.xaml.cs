@@ -61,6 +61,7 @@ namespace WeatherApp
             string file = @"C:\Users\krupo\OneDrive\Pulpit\Weather-station-\WeatherApp\WeatherApp\debug.txt";
             File.WriteAllText(file, trimmedHTML);
             TemperatureBox.Text = trimmedHTML.ToString();
+            ConditionBox.Text = "dobrze jest";
         }
         
 
