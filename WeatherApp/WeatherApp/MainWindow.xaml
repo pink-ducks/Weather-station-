@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Current Weather" Height="400" Width="400">
     <Window.Background>
-        <ImageBrush ImageSource ="image/IrelandBetter.jpg" />
+        <ImageBrush ImageSource ="image/Ireland.jpg" />
     </Window.Background>
     <StackPanel>
         <!--Temperature -->
@@ -30,6 +30,9 @@
                 IsReadOnly="True"
                 Background="BlanchedAlmond"
                 Padding="5"
+                FontSize="25"
+                TextAlignment="Center"
+                FontWeight="Bold"
                 TextWrapping="Wrap" 
                 Focusable="False" Margin="135,103,4.4,-114"
              />
@@ -59,10 +62,13 @@
             <TextBox
                 x:Name="ConditionBox"
                 IsReadOnly="True"
+                FontSize="20"
+                TextAlignment="Center"
+                FontWeight="Bold"
                 Background="BlanchedAlmond"
                 Padding="5"
                 TextWrapping="Wrap" 
-                Focusable="False" Grid.ColumnSpan="3" Margin="104,135,90.6,-135"
+                Focusable="False" Grid.ColumnSpan="3" Margin="104,135,90.6,-135" TextChanged="ConditionBox_TextChanged"
              />
         </Grid>
         <Grid Margin="0,0,-0.4,0">
