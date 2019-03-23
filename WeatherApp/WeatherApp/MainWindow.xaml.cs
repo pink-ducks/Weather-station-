@@ -30,7 +30,7 @@ namespace WeatherApp
         public static string GetDataFromWeb()
         {
             string URL = "http://meteo.gig.eu/";
-            string file = @"C:\Users\krupo\OneDrive\Pulpit\Weather-station-\WeatherApp\WeatherApp\html.txt";
+            string file = @"..\html.txt";
             WebClient client = new WebClient();
             Stream data = client.OpenRead(URL);
             StreamReader reader = new StreamReader(data);
@@ -62,7 +62,7 @@ namespace WeatherApp
         public void FillTextBox()
         {
             string trimmedHTML = GetDataFromWeb();
-            string file = @"C:\Users\krupo\OneDrive\Pulpit\Weather-station-\WeatherApp\WeatherApp\debug.txt";
+            string file = @"..\debug.txt";
             File.WriteAllText(file, trimmedHTML);
             TemperatureBox.Text = trimmedHTML.ToString();
             ConditionBox.Text = "Sunny";
